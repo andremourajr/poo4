@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  	<head>
+	    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/meusEstilos.css"/>
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/meusScripts.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="menu.html">Controle de Acesso</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+
+  				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+	    			<ul class="navbar-nav mr-auto">
+	      				<li class="nav-item dropdown">
+	        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        					<i class="fa fa-database fa-fw"></i>&nbsp;&nbsp;
+	          					Cadastros
+	        				</a>
+	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          					<a class="dropdown-item" href="listaUsuarios.html"><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Usuários</a>
+	          					<a class="dropdown-item" href="#"><i class="fa fa-tv fa-fw"></i>&nbsp;&nbsp;Telas</a>
+	          					<a class="dropdown-item" href="#"><i class="fa fa-id-card fa-fw"></i>&nbsp;&nbsp;Perfis</a>
+	        				</div>
+	        			</li>
+	    			</ul>
+					<form class="form-inline my-2 my-lg-0">
+	      				<input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+	      				<button class="btn btn-outline-success my-2 my-sm-0 btn-sm" type="submit"><i class="fa fa-search fa-fw"></i>Pesquisar</button>
+	    			</form>
+	    			&nbsp;&nbsp;
+	    			<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="btn btn-outline-danger btn-sm" href="login.html"><i class="fa fa-door-open fa-fw"></i>Sair</a>
+						</li>
+	    			</ul>
+  				</div>
+			</nav>
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="menu.html">Home</a></li>
+				<li class="breadcrumb-item active">Lista de Usuários</li>
+			</ol>
+			<p/>
+			<h3><i class="fa fa-users fa-fw"></i>&nbsp;&nbsp;Lista de Usuários</h3>
+			<p/>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Login</th>
+						<th scope="col">Nome</th>
+						<th scope="col">Email</th>
+						<th scope="col">Telefone</th>
+						<th scope="col">&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>amoura</td>
+						<td>Andre Moura</td>
+						<td>andremourajr@gmail.com</td>
+						<td>(31) 9999-9999</td>
+						<td>
+							<a href="cadastroUsuario.html" data-toggle="tooltip" title="Clique para editar os dados deste usuário"><i class="fa fa-pencil-alt fa-fw"></i></a>
+							<span data-toggle="modal" data-target="#modalExcluirUsuario">
+								<a href="#" data-toggle="tooltip" title="Clique para excluir este usuário"><i class="fa fa-trash-alt fa-fw"></i></a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>msilva</td>
+						<td>Maria Silva</td>
+						<td>mariasilva123@gmail.com</td>
+						<td>(31) 9876-1234</td>
+						<td>
+							<a href="cadastroUsuario.html" data-toggle="tooltip" title="Clique para editar os dados deste usuário"><i class="fa fa-pencil-alt fa-fw"></i></a>
+							<span data-toggle="modal" data-target="#modalExcluirUsuario">
+								<a href="#" data-toggle="tooltip" title="Clique para excluir este usuário"><i class="fa fa-trash-alt fa-fw"></i></a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>jtorres</td>
+						<td>Jose Torres</td>
+						<td>jose.torres@gmail.com</td>
+						<td>(31) 9191-2345</td>
+						<td>
+							<a href="cadastroUsuario.html" data-toggle="tooltip" title="Clique para editar os dados deste usuário"><i class="fa fa-pencil-alt fa-fw"></i></a>
+							<span data-toggle="modal" data-target="#modalExcluirUsuario">
+								<a href="#" data-toggle="tooltip" title="Clique para excluir este usuário"><i class="fa fa-trash-alt fa-fw"></i></a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>emengarda</td>
+						<td>Emengarda Nunes</td>
+						<td>emengarda@gmail.com</td>
+						<td>(31) 9111-2321</td>
+						<td>
+							<a href="cadastroUsuario.html" data-toggle="tooltip" title="Clique para editar os dados deste usuário"><i class="fa fa-pencil-alt fa-fw"></i></a>
+							<span data-toggle="modal" data-target="#modalExcluirUsuario">
+								<a href="#" data-toggle="tooltip" title="Clique para excluir este usuário"><i class="fa fa-trash-alt fa-fw"></i></a>
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="btn btn-dark" href="cadastroUsuario.html"><i class="fa fa-plus-square fa-fw"></i>&nbsp;Novo Usuário</a>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalExcluirUsuario" tabindex="-1" role="dialog" aria-labelledby="modalExcluirUsuarioLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalExcluirUsuarioLabel">Atenção!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Você tem certeza que deseja excluir este usuário? Ele será excluído permanentemente.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Sim</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- script para inicializar os tooltips -->
+		<script language="javascript">
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+	</body>
+</html>
